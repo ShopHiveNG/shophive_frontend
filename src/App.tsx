@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
+    <div className="">
+      <div className="antialiased">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -28,8 +28,20 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
-  )
+
+      <p>Dark</p>
+      <h1 className="text-4xl font-bold text-(--color-primary) ">
+        Hello World
+      </h1>
+      <h1 className="text-4xl font-bold text-(--color-secondary)">
+        Hello World
+      </h1>
+
+      <p>Light</p>
+      <h1 className="text-4xl font-bold text-[#f7931e]">Hello World</h1>
+      <h1 className="text-4xl font-bold text-[#4CAF50]">Hello World</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
