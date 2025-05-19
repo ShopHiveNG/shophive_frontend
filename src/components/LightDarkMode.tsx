@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 
 import { setLightMode, setDarkMode } from "../utils/themeUtils";
+import { Icons } from "./icons/Icon";
 
 export default function LightDarkMode() {
+  const { MoonIcon, SunIcon } = Icons;
+
   // Track the current theme in local state
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.theme === "dark" ||
@@ -55,7 +58,7 @@ export default function LightDarkMode() {
           onClick={handleThemeToggle}
           className="size-fit cursor-pointer rounded-xl"
         >
-          {isDarkMode ? "🌙" : "☀️"}
+          {isDarkMode ? <MoonIcon /> : <SunIcon />}
         </button>
       </div>
     </div>

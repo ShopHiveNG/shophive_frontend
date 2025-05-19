@@ -14,7 +14,7 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="flex items-center justify-between font-medium p-4 text-white bg-green-600 dark:bg-black/70">
+    <nav className="flex items-center justify-between font-medium p-4 text-white bg-green-600 dark:bg-gray-800">
       <div className="size-12">
         <img
           src={ShopHiveLogo}
@@ -41,7 +41,7 @@ export default function NavBar() {
             key={label}
             to={path}
             className={({ isActive }) =>
-              isActive ? "text-black" : "text-gray-200"
+              isActive ? "text-white" : "text-white/50"
             }
           >
             {label}

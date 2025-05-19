@@ -7,9 +7,11 @@ export default function AppLayout() {
   return (
     <>
       <NavBar />
+
       <main>
         <Outlet />
       </main>
+
       <Footer />
     </>
   );
