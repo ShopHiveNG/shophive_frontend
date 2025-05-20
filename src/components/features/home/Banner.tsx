@@ -2,7 +2,7 @@ import GirlHeadset from "../../../assets/home/girl_with_headset.webp";
 import { Icons } from "../../icons/Icon";
 
 export default function Banner() {
-  const { ArrowRight } = Icons;
+  const { ArrowRightIcon: ArrowRight } = Icons;
 
   return (
     <div
