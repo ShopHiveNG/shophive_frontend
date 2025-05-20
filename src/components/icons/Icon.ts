@@ -1,5 +1,7 @@
+import { FaArrowRight } from "react-icons/fa";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
-import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { IoClose, IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 import { SlUser } from "react-icons/sl";
 
 export const Icons = {
@@ -8,4 +10,7 @@ export const Icons = {
   UserIcon: SlUser,
   SunIcon: IoSunnyOutline,
   MoonIcon: IoMoonOutline,
+  HamburgerIcon: HiMenuAlt3,
+  CloseIcon: IoClose,
+  ArrowRight: FaArrowRight,
 };

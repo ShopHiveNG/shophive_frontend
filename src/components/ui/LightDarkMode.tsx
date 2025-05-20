@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import { setLightMode, setDarkMode } from "../utils/themeUtils";
-import { Icons } from "./icons/Icon";
+import { setLightMode, setDarkMode } from "../../utils/themeUtils";
+import { Icons } from "../icons/Icon";
 
 export default function LightDarkMode() {
   const { MoonIcon, SunIcon } = Icons;
