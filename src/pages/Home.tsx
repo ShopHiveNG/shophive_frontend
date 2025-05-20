@@ -1,13 +1,15 @@
 import Banner from "../components/features/home/Banner";
 import Benefit from "../components/features/home/Benefit";
-import Category from "../components/features/home/Category";
+import Products from "../components/features/home/Products";
+import ShopCategory from "../components/features/home/ShopCategory";
 
 export default function Home() {
   return (
-    <section className="space-y-12">
+    <section className="space-y-14">
       <Banner />
       <Benefit />
-      <Category />
+      <ShopCategory />
+      <Products />
     </section>
   );
 }

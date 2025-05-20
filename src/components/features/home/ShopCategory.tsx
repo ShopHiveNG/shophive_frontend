@@ -1,6 +1,6 @@
 import { Icons } from "../../icons/Icon";
 
-export default function Category() {
+export default function ShopCategory() {
   const {
     PhoneIcon,
     SmartWatchIcon,
@@ -22,10 +22,7 @@ export default function Category() {
   ];
 
   return (
-    <div
-      aria-label="Filter by category"
-      className="space-y-4 px-4 text-gray-800"
-    >
+    <div aria-label="Shop by category" className="space-y-4 px-4 text-gray-800">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold">Shop by Category</h2>
 
