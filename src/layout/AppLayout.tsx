@@ -8,7 +8,7 @@ export default function AppLayout() {
     <>
       <NavBar />
 
-      <main>
+      <main className="selection:bg-[var(--color-primary)] selection:text-white">
         <Outlet />
       </main>
 
