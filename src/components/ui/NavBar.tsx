@@ -15,17 +15,19 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="flex items-center justify-between font-medium p-4 text-white bg-gray-800">
+    <nav className="fixed z-[999] flex w-full items-center justify-between gap-4 bg-gray-800 p-4 font-medium text-white opacity-100">
       <div className="size-12">
-        <img
-          src={ShopHiveLogo}
-          alt="Shop Hive Logo"
-          className="size-full object-cover"
-          loading="lazy"
-        />
+        <Link to="/">
+          <img
+            src={ShopHiveLogo}
+            alt="Shop Hive Logo"
+            className="size-full object-cover"
+            loading="lazy"
+          />
+        </Link>
       </div>
 
-      <div className="border-2 hidden sm:flex items-center gap-2 border-white px-2 py-1 rounded-2xl">
+      <div className="hidden w-[50%] items-center gap-2 rounded-2xl border-2 border-white px-2 py-1 sm:flex">
         <label htmlFor="search">
           <SearchIcon />
         </label>
@@ -34,11 +36,11 @@ export default function NavBar() {
           type="text"
           placeholder="Search the products"
           id="search"
-          className="outline-none bg-transparent"
+          className="bg-transparent outline-none"
         />
       </div>
 
-      <div className="xs:flex hidden gap-4 items-center">
+      <div className="xs:flex hidden items-center gap-4">
         {navLists.map(({ label, path }) => (
           <NavLink
             key={label}
@@ -53,17 +55,19 @@ export default function NavBar() {
       </div>
 
       <div className="flex items-center gap-8">
-        <div className="gap-3 text-[1.375rem] flex items-center">
+        <div className="flex items-center gap-3 text-[1.375rem]">
           <LightDarkMode />
+
           <Link to="/cart">
             <CartIcon />
           </Link>
+
           <Link to="/login">
             <UserIcon />
           </Link>
         </div>
 
-        <div className="text-[1.375rem] xs:hidden block">
+        <div className="xs:hidden block text-[1.375rem]">
           <Drawer />
         </div>
       </div>

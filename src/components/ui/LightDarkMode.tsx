@@ -10,7 +10,7 @@ export default function LightDarkMode() {
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
+        window.matchMedia("(prefers-color-scheme: dark)").matches),
   );
 
   useEffect(() => {
@@ -52,15 +52,13 @@ export default function LightDarkMode() {
 
   return (
     <div className="flex">
-      <div>
-        {/*Button toggle between Light/Dark Mode*/}
-        <button
-          onClick={handleThemeToggle}
-          className="size-fit cursor-pointer rounded-xl"
-        >
-          {isDarkMode ? <MoonIcon /> : <SunIcon />}
-        </button>
-      </div>
+      {/*Button toggle between Light/Dark Mode*/}
+      <button
+        onClick={handleThemeToggle}
+        className="size-fit cursor-pointer rounded-xl"
+      >
+        {isDarkMode ? <MoonIcon /> : <SunIcon />}
+      </button>
     </div>
   );
 }

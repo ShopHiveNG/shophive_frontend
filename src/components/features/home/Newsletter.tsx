@@ -4,7 +4,7 @@ export default function Newsletter() {
   return (
     <section
       aria-label="Newsletter Form"
-      className="relative w-full p-[20px] dark:bg-gray-800"
+      className="relative w-full p-[20px] dark:bg-gray-700/50"
     >
       {/* email icon */}
       <div className="absolute top-[-30px] left-[50%] w-max translate-x-[-50%] transform rounded-full border-[3px] border-white bg-gradient-to-t from-[var(--color-primary)] to-[var(--color-primary-light)] p-1.5">
@@ -13,7 +13,7 @@ export default function Newsletter() {
 
       {/* content */}
       <div className="mx-auto w-full md:w-[70%] lg:w-[50%]">
-        <h1 className="mt-8 text-center text-5xl leading-[50px] font-[800] text-[var(--color-primary)] capitalize">
+        <h1 className="mt-8 text-center text-5xl leading-[50px] font-[800] text-pretty text-[var(--color-primary)] capitalize">
           Sign up to our newsletter
         </h1>
         <p className="mt-2 text-center text-2xl font-[300] text-balance text-gray-600 dark:text-gray-300">
@@ -31,7 +31,7 @@ export default function Newsletter() {
           </button>
         </form>
 
-        <p className="mt-8 text-center text-[0.9rem] text-gray-500 dark:text-gray-300">
+        <p className="mt-8 text-center text-[0.9rem] text-balance text-gray-500 dark:text-gray-300">
           Your email is safe with us, we don"t spam
         </p>
       </div>
