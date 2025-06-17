@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import ShopHiveLogo from "../../assets/shophive.webp";
@@ -6,9 +7,15 @@ import LightDarkMode from "../ui/LightDarkMode";
 import Drawer from "./Drawer";
 
 export default function NavBar() {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
   const { CartIcon, SearchIcon, UserIcon } = Icons;
 
-  const navLists = [
+  const navLists: { label: string; path: string }[] = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
     { label: "Contact", path: "/contact" },
@@ -33,6 +40,7 @@ export default function NavBar() {
         </label>
 
         <input
+          ref={inputRef}
           type="text"
           placeholder="Search the products"
           id="search"
