@@ -121,7 +121,7 @@ export default function Footer() {
           <img src={ShopHiveLogo} alt="logo" className="size-8 object-cover" />
         </Link>
 
-        <p className="text-sm text-gray-600 dark:text-slate-500">
+        <p className="text-sm font-thin text-white">
           © 2025 ShopHive. All Rights Reserved.
         </p>
 

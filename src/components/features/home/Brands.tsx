@@ -60,7 +60,7 @@ export default function Brands() {
             key={i}
             src={logo}
             alt="Brand logo"
-            className="mx-4 h-28 w-48 rounded-2xl border border-gray-200 p-8 transition-colors duration-200 dark:border-gray-700"
+            className="mx-4 h-20 w-48 rounded-2xl border border-gray-200 p-8 transition-colors duration-200 sm:h-28 dark:border-gray-700"
           />
         ))}
       </Marquee>

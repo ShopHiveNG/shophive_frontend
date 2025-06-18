@@ -8,12 +8,12 @@ export default function Newsletter() {
     >
       {/* email icon */}
       <div className="absolute top-[-30px] left-[50%] w-max translate-x-[-50%] transform rounded-full border-[3px] border-white bg-gradient-to-t from-[var(--color-primary)] to-[var(--color-primary-light)] p-1.5">
-        <MdOutlineMail className="rounded-full border border-white p-1.5 text-[3rem] text-white" />
+        <MdOutlineMail className="rounded-full border border-white p-1.5 text-5xl text-white" />
       </div>
 
       {/* content */}
       <div className="mx-auto w-full md:w-[70%] lg:w-[50%]">
-        <h1 className="mt-8 text-center text-5xl leading-[50px] font-[800] text-pretty text-[var(--color-primary)] capitalize">
+        <h1 className="mt-8 bg-gradient-to-r from-[var(--color-primary-light)] to-[var(--color-primary)] bg-clip-text py-1 text-center text-5xl leading-[50px] font-[800] text-pretty text-transparent capitalize">
           Sign up to our newsletter
         </h1>
         <p className="mt-2 text-center text-2xl font-[300] text-balance text-gray-600 dark:text-gray-300">
