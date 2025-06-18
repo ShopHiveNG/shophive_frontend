@@ -2,7 +2,7 @@ import GirlHeadset from "../../../assets/home/girl_with_headset.webp";
 import { Icons } from "../../icons/Icon";
 
 export default function Banner() {
-  const { ArrowRightIcon: ArrowRight } = Icons;
+  const { ArrowRightIcon } = Icons;
 
   return (
     <div
@@ -20,7 +20,7 @@ export default function Banner() {
         <button className="group flex cursor-pointer items-center gap-3 rounded-md bg-[var(--color-secondary)] px-10 py-4 font-medium text-white transition-colors duration-300 hover:bg-[var(--color-secondary-light)] sm:px-4 sm:py-2">
           Shop now
           <span className="transition-transform duration-300 group-hover:-rotate-45">
-            {<ArrowRight />}
+            {<ArrowRightIcon />}
           </span>
         </button>
       </div>

@@ -8,7 +8,7 @@ export default function AppLayout() {
     <div className="relative isolate">
       <NavBar />
 
-      <main className="pt-20 selection:bg-[var(--color-primary)] selection:text-white dark:bg-gray-800">
+      <main className="pt-20">
         <Outlet />
       </main>
 

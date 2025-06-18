@@ -9,6 +9,7 @@ import Drawer from "./Drawer";
 export default function NavBar() {
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // Auto focus on Search when the page is in initial loads
   useEffect(() => {
     inputRef.current?.focus();
   }, []);

@@ -4,7 +4,7 @@ export default function Newsletter() {
   return (
     <section
       aria-label="Newsletter Form"
-      className="relative w-full p-[20px] dark:bg-gray-700/50"
+      className="relative w-full p-5 dark:bg-gray-700/50"
     >
       {/* email icon */}
       <div className="absolute top-[-30px] left-[50%] w-max translate-x-[-50%] transform rounded-full border-[3px] border-white bg-gradient-to-t from-[var(--color-primary)] to-[var(--color-primary-light)] p-1.5">

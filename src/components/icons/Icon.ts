@@ -1,12 +1,20 @@
 import {
   IoChevronBack,
+  IoChevronDown,
   IoChevronForward,
   IoClose,
   IoGameControllerOutline,
   IoMoonOutline,
   IoSunnyOutline,
 } from "react-icons/io5";
-import { BsCreditCard2Front, BsRepeat } from "react-icons/bs";
+import {
+  BsCreditCard2Front,
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+  BsRepeat,
+  BsTwitter,
+} from "react-icons/bs";
 import { CiCamera, CiHeadphones } from "react-icons/ci";
 import { FaArrowRight } from "react-icons/fa";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
@@ -37,4 +45,9 @@ export const Icons = {
   GameIcon: IoGameControllerOutline,
   ChevronRightIcon: IoChevronForward,
   ChevronLeftIcon: IoChevronBack,
+  ChevronDownIcon: IoChevronDown,
+  InstagramIcon: BsInstagram,
+  LinkedInIcon: BsLinkedin,
+  TwitterIcon: BsTwitter,
+  FacebookIcon: BsFacebook,
 };
