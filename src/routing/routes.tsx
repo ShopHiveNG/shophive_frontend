@@ -1,6 +1,7 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 
 import AppLayout from "../layout/AppLayout";
+import AuthLayout from "../layout/AuthLayout";
 import About from "../pages/About";
 import Cart from "../pages/Cart";
 import Contact from "../pages/Contact";
@@ -16,11 +17,19 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     children: [
       { index: true, element: <Home /> },
-      { path: "/login", element: <Login /> },
-      { path: "/signup", element: <SignUp /> },
-      { path: "/about", element: <About /> },
-      { path: "/contact", element: <Contact /> },
-      { path: "/cart", element: <Cart /> },
+      { path: "about", element: <About /> },
+      { path: "contact", element: <Contact /> },
+      { path: "cart", element: <Cart /> },
+    ],
+  },
+  {
+    path: "/auth",
+    errorElement: <ErrorPage />,
+    element: <AuthLayout />,
+    children: [
+      { index: true, element: <Navigate to="/auth/login" replace /> },
+      { path: "login", element: <Login /> },
+      { path: "signup", element: <SignUp /> },
     ],
   },
 ]);

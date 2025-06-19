@@ -74,7 +74,7 @@ export default function Footer() {
             {aboutCompanyLists.map((description, i) => (
               <p
                 key={i}
-                className="cursor-pointer capitalize transition-all duration-200 hover:text-[var(--color-secondary-light)]"
+                className="w-fit cursor-pointer capitalize transition-all duration-200 hover:text-[var(--color-secondary-light)]"
               >
                 {description}
               </p>
@@ -90,7 +90,7 @@ export default function Footer() {
             {accountLists.map((description, i) => (
               <p
                 key={i}
-                className="cursor-pointer capitalize transition-all duration-200 hover:text-[var(--color-secondary-light)]"
+                className="w-fit cursor-pointer capitalize transition-all duration-200 hover:text-[var(--color-secondary-light)]"
               >
                 {description}
               </p>
@@ -106,7 +106,7 @@ export default function Footer() {
             {customerServiceLists.map((description, i) => (
               <p
                 key={i}
-                className="cursor-pointer capitalize transition-all duration-200 hover:text-[var(--color-secondary-light)]"
+                className="w-fit cursor-pointer capitalize transition-all duration-200 hover:text-[var(--color-secondary-light)]"
               >
                 {description}
               </p>
@@ -116,16 +116,19 @@ export default function Footer() {
       </div>
 
       {/* All Rights Reserved & Social Links */}
-      <div className="mt-10 flex w-full flex-wrap items-center justify-between gap-5 border-t border-gray-200 pt-5 dark:border-slate-700">
-        <Link to="/">
+      <div className="mt-10 flex w-full flex-wrap items-center justify-between gap-2 border-t border-gray-200 pt-5 dark:border-slate-700">
+        <Link
+          to="/"
+          className="flex w-full justify-center sm:w-fit sm:justify-start"
+        >
           <img src={ShopHiveLogo} alt="logo" className="size-8 object-cover" />
         </Link>
 
-        <p className="text-sm font-thin text-white">
+        <p className="w-full text-center text-sm font-thin text-white sm:w-fit sm:text-left">
           © 2025 ShopHive. All Rights Reserved.
         </p>
 
-        <div className="flex items-center gap-2.5">
+        <div className="flex w-full items-center justify-center gap-2.5 sm:w-fit">
           {socialHandleLists.map(({ icon, link }, i) => (
             <a
               href={`https://${link}`}

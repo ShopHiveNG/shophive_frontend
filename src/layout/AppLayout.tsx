@@ -5,7 +5,7 @@ import NavBar from "../components/ui/NavBar";
 
 export default function AppLayout() {
   return (
-    <div className="relative isolate">
+    <>
       <NavBar />
 
       <main className="pt-20">
@@ -13,6 +13,6 @@ export default function AppLayout() {
       </main>
 
       <Footer />
-    </div>
+    </>
   );
 }

@@ -49,7 +49,9 @@ export default function Products() {
 
   return (
     <div aria-label="Products" className="space-y-6 px-4">
-      <p className="font-bold underline underline-offset-4">New Arrivals</p>
+      <p className="font-bold underline underline-offset-4 dark:text-white">
+        New Arrivals
+      </p>
 
       <div className="2xs:grid-cols-2 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
         {productsLists.map(({ name, specification, image, price }) => (

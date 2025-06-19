@@ -71,7 +71,7 @@ export default function NavBar() {
             <CartIcon />
           </Link>
 
-          <Link to="/login">
+          <Link to="/auth/login">
             <UserIcon />
           </Link>
         </div>

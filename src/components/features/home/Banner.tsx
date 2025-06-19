@@ -25,7 +25,7 @@ export default function Banner() {
         </button>
       </div>
 
-      <div className="z-10 size-full">
+      <div className="size-full">
         <img
           src={GirlHeadset}
           alt="Girl with Headset"
