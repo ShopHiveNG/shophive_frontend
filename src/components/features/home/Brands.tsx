@@ -41,11 +41,11 @@ export default function Brands() {
 
   // Use rgba to handle opacity properly
   const gradientColor = isDarkMode
-    ? { r: 31, g: 41, b: 55, a: 1 }
+    ? { r: 17, g: 24, b: 39, a: 1 }
     : { r: 255, g: 255, b: 255, a: 1 };
 
   return (
-    <div className="relative bg-white px-4 py-6 transition-colors duration-200 dark:bg-gray-800">
+    <div className="relative bg-white px-4 py-6 transition-colors duration-200 dark:bg-gray-900">
       <Marquee
         pauseOnHover
         autoFill
