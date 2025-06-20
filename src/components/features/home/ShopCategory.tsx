@@ -23,7 +23,7 @@ export default function ShopCategory() {
 
   return (
     <div aria-label="Shop by category" className="space-y-4 px-4 text-gray-800">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between dark:text-white">
         <h2 className="text-2xl font-bold">Shop by Category</h2>
 
         <div className="flex items-center text-2xl">
