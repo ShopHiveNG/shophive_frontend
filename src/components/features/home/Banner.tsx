@@ -17,7 +17,7 @@ export default function Banner() {
           <h1>ProMax</h1>
         </div>
 
-        <button className="group flex cursor-pointer items-center gap-3 rounded-md bg-[var(--color-secondary)] px-10 py-4 font-medium text-white transition-colors duration-300 hover:bg-[var(--color-secondary-light)] sm:px-4 sm:py-2">
+        <button className="group bg-secondary hover:bg-secondary-light flex cursor-pointer items-center gap-3 rounded-md px-10 py-4 font-medium text-white transition-colors duration-300 sm:px-4 sm:py-2">
           Shop now
           <span className="transition-transform duration-300 group-hover:-rotate-45">
             {<ArrowRightIcon />}

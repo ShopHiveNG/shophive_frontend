@@ -7,13 +7,13 @@ export default function Newsletter() {
       className="relative w-full p-5 dark:bg-gray-700/50"
     >
       {/* email icon */}
-      <div className="absolute top-[-30px] left-[50%] w-max translate-x-[-50%] transform rounded-full border-[3px] border-white bg-gradient-to-t from-[var(--color-primary)] to-[var(--color-primary-light)] p-1.5">
+      <div className="from-primary to-primary-light absolute top-[-30px] left-[50%] w-max translate-x-[-50%] transform rounded-full border-[3px] border-white bg-gradient-to-t p-1.5">
         <MdOutlineMail className="rounded-full border border-white p-1.5 text-5xl text-white" />
       </div>
 
       {/* content */}
       <div className="mx-auto w-full md:w-[70%] lg:w-[50%]">
-        <h1 className="mt-8 bg-gradient-to-r from-[var(--color-primary-light)] to-[var(--color-primary)] bg-clip-text py-1 text-center text-5xl leading-[50px] font-[800] text-pretty text-transparent capitalize">
+        <h1 className="from-primary-light to-primary mt-8 bg-gradient-to-r bg-clip-text py-1 text-center text-5xl leading-[50px] font-[800] text-pretty text-transparent capitalize">
           Sign up to our newsletter
         </h1>
         <p className="mt-2 text-center text-2xl font-[300] text-balance text-gray-600 dark:text-gray-300">
@@ -23,10 +23,10 @@ export default function Newsletter() {
         <form className="xs:flex-row xs:items-center mt-12 flex flex-col items-end justify-between gap-[15px]">
           <input
             placeholder="Email Address"
-            className="w-full rounded-md border border-gray-300 px-4 py-3 caret-[var(--color-secondary)] outline-none focus:ring-0 dark:text-white dark:placeholder:text-white"
+            className="caret-secondary w-full rounded-md border border-gray-300 px-4 py-3 outline-none focus:ring-0 dark:text-white dark:placeholder:text-white"
           />
 
-          <button className="xs:w-max w-full rounded-md bg-[var(--color-primary)] px-8 py-3 text-white transition-all hover:scale-[1.05] hover:bg-[var(--color-primary-light)]">
+          <button className="xs:w-max bg-primary hover:bg-primary-light w-full rounded-md px-8 py-3 text-white transition-all hover:scale-[1.05]">
             Subscribe
           </button>
         </form>

@@ -53,7 +53,7 @@ export default function Footer() {
           <h6 className="text-xl font-semibold">ShopHive</h6>
 
           <div className="space-y-2.5 text-sm font-light text-gray-200">
-            <p className="cursor-pointer transition-all duration-200 hover:text-[var(--color-secondary-light)]">
+            <p className="hover:text-secondary-light cursor-pointer transition-all duration-200">
               Got question? Contact us 24/7
             </p>
 
@@ -74,7 +74,7 @@ export default function Footer() {
             {aboutCompanyLists.map((description, i) => (
               <p
                 key={i}
-                className="w-fit cursor-pointer capitalize transition-all duration-200 hover:text-[var(--color-secondary-light)]"
+                className="hover:text-secondary-light w-fit cursor-pointer capitalize transition-all duration-200"
               >
                 {description}
               </p>
@@ -90,7 +90,7 @@ export default function Footer() {
             {accountLists.map((description, i) => (
               <p
                 key={i}
-                className="w-fit cursor-pointer capitalize transition-all duration-200 hover:text-[var(--color-secondary-light)]"
+                className="hover:text-secondary-light w-fit cursor-pointer capitalize transition-all duration-200"
               >
                 {description}
               </p>
@@ -106,7 +106,7 @@ export default function Footer() {
             {customerServiceLists.map((description, i) => (
               <p
                 key={i}
-                className="w-fit cursor-pointer capitalize transition-all duration-200 hover:text-[var(--color-secondary-light)]"
+                className="hover:text-secondary-light w-fit cursor-pointer capitalize transition-all duration-200"
               >
                 {description}
               </p>
@@ -134,7 +134,7 @@ export default function Footer() {
               href={`https://${link}`}
               target="_blank"
               key={i}
-              className="cursor-pointer rounded-full p-1.5 text-[1.3rem] transition-all duration-300 hover:bg-[var(--color-secondary)] hover:text-white dark:text-slate-400"
+              className="hover:bg-secondary cursor-pointer rounded-full p-1.5 text-[1.3rem] transition-all duration-300 hover:text-white dark:text-slate-400"
             >
               {icon}
             </a>

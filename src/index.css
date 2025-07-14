@@ -3,13 +3,18 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+@theme {
+  --font-Inter: "Inter", sans-serif;
+
   --color-primary: #ff6f00;
   --color-primary-light: #f7931e;
   --color-secondary: #27ae60;
   --color-secondary-light: #4caf50;
-}
 
-@theme {
   --breakpoint-*: initial;
   --breakpoint-3xs: 20rem; /* 320px */
   --breakpoint-2xs: 23.438rem; /* 375px */
@@ -19,11 +24,4 @@
   --breakpoint-lg: 64rem; /* 1024px */
   --breakpoint-xl: 80rem; /* 1280px */
   --breakpoint-2xl: 90rem; /* 1440px */
-
-  --font-Inter: "Inter", sans-serif;
-}
-
-body {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
 }
