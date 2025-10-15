@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
-import ShopHiveLogo from "../../assets/shophive.webp";
-import { Icons } from "../icons/Icon";
+import { Icons } from "@/components/icons/Icon";
+import ShopHiveLogo from "@/assets/shophive.webp";
 
 interface SocialHandle {
   icon: ReactNode;

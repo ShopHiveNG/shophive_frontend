@@ -9,10 +9,15 @@ export default function Home() {
   return (
     <section aria-label="Home page view" className="space-y-14">
       <Banner />
+
       <Benefit />
+
       <ShopCategory />
+
       <Products />
+
       <Brands />
+
       <Newsletter />
     </section>
   );

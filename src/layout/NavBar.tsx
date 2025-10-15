@@ -1,10 +1,9 @@
 import { useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-import ShopHiveLogo from "../../assets/shophive.webp";
-import { Icons } from "../icons/Icon";
-import LightDarkMode from "../ui/LightDarkMode";
-import Drawer from "./Drawer";
+import { Icons } from "@/components/icons/Icon";
+import { ModeToggle } from "@/components/ui/mode-toggle";
+import ShopHiveLogo from "@/assets/shophive.webp";
 
 export default function NavBar() {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -65,7 +64,8 @@ export default function NavBar() {
 
       <div className="flex items-center gap-8">
         <div className="flex items-center gap-3 text-[1.375rem]">
-          <LightDarkMode />
+          {/* <LightDarkMode /> */}
+          <ModeToggle />
 
           <Link to="/cart">
             <CartIcon />
@@ -77,7 +77,7 @@ export default function NavBar() {
         </div>
 
         <div className="xs:hidden block text-[1.375rem]">
-          <Drawer />
+          {/* <Drawer /> */}
         </div>
       </div>
     </nav>
