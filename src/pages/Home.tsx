@@ -7,7 +7,7 @@ import ShopCategory from "@/components/features/home/ShopCategory";
 
 export function Home() {
   return (
-    <section aria-label="Home page view" className="space-y-14">
+    <section aria-label="Home page view" className="space-y-10">
       <HeroSection />
 
       <Benefit />

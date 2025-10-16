@@ -37,7 +37,7 @@ export default function HeroSection() {
       image:
         "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1964",
       gradient: { from: "from-primary-dark", to: "to-primary-light" },
-      buttonColor: "#33B36B",
+      buttonColor: "bg-[#33B36B]",
     },
     {
       title: "smart tech, near you",
@@ -45,7 +45,7 @@ export default function HeroSection() {
       image:
         "https://images.unsplash.com/photo-1580137189272-c9379f8864fd?auto=format&fit=crop&q=80&w=2070",
       gradient: { from: "from-secondary-dark", to: "to-secondary-light" },
-      buttonColor: "#FFB878",
+      buttonColor: "bg-[#FFB878]",
     },
     {
       title: "style, right next door",
@@ -53,7 +53,7 @@ export default function HeroSection() {
       image:
         "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=2070",
       gradient: { from: "from-blue-dark", to: "to-blue-light" },
-      buttonColor: "#1c6fc1",
+      buttonColor: "bg-[#1c6fc1]",
     },
   ];
 
@@ -91,8 +91,7 @@ export default function HeroSection() {
                       </div>
 
                       <Button
-                        style={{ backgroundColor: buttonColor }}
-                        className="group cursor-pointer p-6 text-white capitalize shadow-xs transition-all duration-300 hover:opacity-90 active:scale-105"
+                        className={`${buttonColor} group cursor-pointer p-6 text-white capitalize shadow transition-all duration-300 hover:bg-[${buttonColor}] active:scale-105`}
                       >
                         shop now
                         <span>
@@ -105,6 +104,7 @@ export default function HeroSection() {
                       <img
                         src={image}
                         alt={title}
+                        loading="lazy"
                         className="block size-full object-cover"
                       />
                     </div>
