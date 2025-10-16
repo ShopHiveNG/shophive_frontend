@@ -6,7 +6,7 @@ import AuthLayout from "@/layout/AuthLayout";
 import Cart from "@/pages/Cart";
 import Contact from "@/pages/Contact";
 import ErrorPage from "@/pages/ErrorPage";
-import Home from "@/pages/Home";
+import { Home } from "@/pages/Home";
 import Login from "@/pages/Login";
 import SignUp from "@/pages/SignUp";
 
