@@ -7,7 +7,7 @@ export default function Banner() {
   return (
     <div
       aria-label="Banner"
-      className="grid h-[calc(100dvh-80px)] grid-cols-1 items-center overflow-hidden bg-gradient-to-r from-blue-200 to-cyan-100 sm:grid-cols-2"
+      className="grid h-[calc(100dvh-120px)] grid-cols-1 items-center overflow-hidden bg-gradient-to-r from-blue-200 to-cyan-100 sm:grid-cols-2"
     >
       <div className="flex w-full flex-col items-center space-y-8 px-6 pt-8 sm:items-start lg:flex-col lg:items-start lg:py-0">
         <p className="text-gray-600">Feel the real quality sound</p>

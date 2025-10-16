@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -42,11 +44,15 @@
 @theme {
   --font-Inter: "Inter", sans-serif;
 
-  --color-primary-1: #33b36b;
-  --color-primary-2: #288b53;
-  --color-secondary-1: #fc9231;
-  --color-secondary-2: #f67804;
-  --color-dark: #181d25;
+  --color-primary-light: #33b36b;
+  --color-primary-dark: #288b53;
+
+  --color-secondary-light: #fc9231;
+  --color-secondary-dark: #f67804;
+  --color-secondary-fade: #fff4ea;
+
+  --color-black-dark: #181d25;
+  --color-black-light: #222934;
 
   --breakpoint-*: initial;
   --breakpoint-3xs: 20rem; /* 320px */

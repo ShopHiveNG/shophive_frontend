@@ -1,8 +1,7 @@
 import type { ReactNode } from "react";
-import { Link } from "react-router-dom";
 
 import { Icons } from "@/components/icons/Icon";
-import ShopHiveLogo from "@/assets/shophive.webp";
+// import ShopHiveLogo from "@/assets/shophive.webp";
 
 interface SocialHandle {
   icon: ReactNode;
@@ -46,7 +45,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-gray-800 p-9 px-4 text-white dark:bg-gray-900">
+    <footer className="bg-black-dark w-full p-9 px-4 text-white">
       <div className="xs:grid-cols-2 grid gap-x-2 gap-y-16 lg:grid-cols-4">
         {/*  ShopHive  */}
         <div className="space-y-4">
@@ -117,13 +116,6 @@ export default function Footer() {
 
       {/* All Rights Reserved & Social Links */}
       <div className="mt-10 flex w-full flex-wrap items-center justify-between gap-2 border-t border-gray-200 pt-5 dark:border-slate-700">
-        <Link
-          to="/"
-          className="flex w-full justify-center sm:w-fit sm:justify-start"
-        >
-          <img src={ShopHiveLogo} alt="logo" className="size-8 object-cover" />
-        </Link>
-
         <p className="w-full text-center text-sm font-thin text-white sm:w-fit sm:text-left">
           © 2025 ShopHive. All Rights Reserved.
         </p>

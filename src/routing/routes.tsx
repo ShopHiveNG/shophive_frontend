@@ -1,14 +1,14 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
-import AppLayout from "../layout/AppLayout";
-import AuthLayout from "../layout/AuthLayout";
-import About from "../pages/About";
-import Cart from "../pages/Cart";
-import Contact from "../pages/Contact";
-import ErrorPage from "../pages/ErrorPage";
-import Home from "../pages/Home";
-import Login from "../pages/Login";
-import SignUp from "../pages/SignUp";
+import About from "@/pages/About";
+import AppLayout from "@/layout/AppLayout";
+import AuthLayout from "@/layout/AuthLayout";
+import Cart from "@/pages/Cart";
+import Contact from "@/pages/Contact";
+import ErrorPage from "@/pages/ErrorPage";
+import Home from "@/pages/Home";
+import Login from "@/pages/Login";
+import SignUp from "@/pages/SignUp";
 
 const router = createBrowserRouter([
   {

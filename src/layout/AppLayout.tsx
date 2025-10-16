@@ -1,14 +1,14 @@
 import { Outlet } from "react-router-dom";
 
-import Footer from "@/layout/Footer";
-import NavBar from "@/layout/NavBar";
+import Footer from "@/components/ui/Footer";
+import HeaderBar from "@/components/ui/HeaderBar";
 
 export default function AppLayout() {
   return (
     <>
-      <NavBar />
+      <HeaderBar />
 
-      <main className="pt-20">
+      <main className="mx-auto max-w-360 pt-30">
         <Outlet />
       </main>
 
